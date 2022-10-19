@@ -1,14 +1,12 @@
 import React from 'react';
 
-import './components/CourseGoals/CourseGoalList';
-import './components/CourseGoals/CourseInput';
-import './App.css';
 import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <CourseInput />
       <CourseGoalList />
     </div>
