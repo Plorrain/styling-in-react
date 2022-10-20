@@ -53,8 +53,9 @@ const CourseInput = props => {
 
   return (
     <form onSubmit={formSubmitHandler}>
-      <div >
-        {/*-> piece of code was in div tag called <ForControl> when using styled components: invalid={!isValid} */}
+      <div className={`${styles['form-control']} ${!isValid && styles.invalid}`}>
+        {/*-> piece of code was in div tag called <FormControl>
+        when using styled components: invalid={!isValid} */}
         <label>Course Goal</label>
         <input type="text" onChange={goalInputChangeHandler} />
       </div>
